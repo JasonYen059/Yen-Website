@@ -1,0 +1,48 @@
+.detail-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Work Sans", sans-serif;
+
+    .detail-img{
+        width: 80%;
+        height: auto;
+    }
+
+    .detail-text-container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 2vw 0;
+
+        .text-title{
+            font-size: 3vw;
+            font-weight: 700;
+            font-style: italic;
+            color: rgb(88, 88, 88);
+        }
+
+        .text-content{
+            font-size: 1vw;
+            font-weight: 500;
+            margin: 1vw 0;
+            color: rgb(131, 130, 130);
+        }
+
+        .close{
+            font-size: 1vw;
+            font-style: italic;
+            font-weight: 700;
+            text-decoration: none;
+            color: rgb(88, 88, 88);
+            transition: all 0.5s ease;
+
+            &:hover{
+                font-size: 1.1vw;
+                color: black;
+                text-shadow: rgb(199, 199, 199) 2px 2px 2px;
+            }
+        }
+    }
+}

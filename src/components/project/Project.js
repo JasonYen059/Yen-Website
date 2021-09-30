@@ -3,8 +3,9 @@ import "./Project.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { BsLink } from "react-icons/bs";
+import {Link} from "react-router-dom";
 
-const Project = ({ data }) => {
+const Project = ({ data,url }) => {
   useEffect(() => {
     Aos.init();
   }, []);
@@ -12,7 +13,9 @@ const Project = ({ data }) => {
   return (
     <div data-aos="zoom-in" data-aos-duration="1000" className="project">
       <div className="img-container">
+        <Link to={`${url}/${data.id}`}>
         <img src={data.img} alt={data.name} className="projectimg" />
+        </Link>
       </div>
       <div className="text-container">
         <div>

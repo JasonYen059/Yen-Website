@@ -1,12 +1,15 @@
 import React from "react";
 import "./Work.scss";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Switch,Route,Link,useRouteMatch } from "react-router-dom";
 import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 import workData from "../../../workData";
 import Project from "../../project/Project";
+import ProjectDetail from "../../project/ProjectDetail";
 
 const Work = () => {
+
+  let { path, url } = useRouteMatch();
 
   return (
     <motion.div
@@ -43,11 +46,18 @@ const Work = () => {
       </div>
 
       <div className="project-container">
+        <Switch>
+        <Route exact path={path}>
         {workData.map((data) => {
           return (
-           <Project key={data.id} data={data}/>
+           <Project key={data.id} url={url} data={data}/>
           );
         })}
+        </Route>
+        <Route path={`${path}/:Id`}>
+          <ProjectDetail />
+        </Route>
+        </Switch>
       </div>
     </motion.div>
   );
