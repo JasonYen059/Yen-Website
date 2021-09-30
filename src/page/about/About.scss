@@ -37,32 +37,16 @@
     }
 
     .icon-container {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      top: 25vw;
-      z-index: 1;
-
       .icon-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-
         .link {
-          display: flex;
-          align-items: center;
-          text-decoration: none;
           .icon {
             color: white;
-            opacity: 0.5;
-            font-size: 5vw;
+            opacity: 0.8;
           }
 
           .icon-font {
             color: white;
-            opacity: 0.5;
+            opacity: 0.8;
             font-size: 1.2vw;
             font-weight: 700;
             font-style: italic;

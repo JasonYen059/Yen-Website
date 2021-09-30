@@ -1,9 +1,9 @@
 import React from "react";
 import "./About.scss";
 import { motion } from "framer-motion";
-import man from "../../../img/yellowcar.jpg";
-import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import man from "../../img/yellowcar.jpg";
+import SlideIcon from "../../components/slideIcon/SlideIcon";
+
 
 const About = () => {
   const container = {
@@ -39,22 +39,8 @@ const About = () => {
         <motion.span variants={itemA} className="about-title">
           ABOUT
         </motion.span>
-
         
-        <div className="icon-container">
-          <motion.div whileHover={{ scale: 1.1 }} className="icon-div">
-            <Link to="/work" className="link">
-              <BsChevronCompactLeft className="icon" />
-              <span className="icon-font">SKILL</span>
-            </Link>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }} className="icon-div">
-            <Link to="/work" className="link">
-              <span className="icon-font">WORK</span>
-              <BsChevronCompactRight className="icon" />
-            </Link>
-          </motion.div>
-        </div>
+        <SlideIcon left="/skill" leftTitle="SKILL" right="/work" rightTitle="WORK"/>
       </div>
 
       <div className="introduce">

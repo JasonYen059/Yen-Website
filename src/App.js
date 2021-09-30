@@ -3,9 +3,10 @@ import { Switch, Route, useLocation } from "react-router-dom";
 import "aos/dist/aos.css";
 import React from "react";
 import { AnimatePresence } from "framer-motion";
-import Home from "./components/page/home/Home";
-import About from "./components/page/about/About";
-import Work from "./components/page/work/Work";
+import Home from "./page/home/Home";
+import About from "./page/about/About";
+import Work from "./page/work/Work";
+import Skill from "./page/skill/Skill";
 
 function App() {
   const location = useLocation();
@@ -23,6 +24,10 @@ function App() {
 
           <Route path="/work">
             <Work />
+          </Route>
+
+          <Route path="/skill">
+            <Skill />
           </Route>
         </Switch>
       </AnimatePresence>

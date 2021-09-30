@@ -1,15 +1,23 @@
-import React from "react";
+import React ,{useEffect}from "react";
 import "./Work.scss";
 import { motion } from "framer-motion";
-import { Switch,Route,Link,useRouteMatch } from "react-router-dom";
-import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
-import workData from "../../../workData";
-import Project from "../../project/Project";
-import ProjectDetail from "../../project/ProjectDetail";
+import { Switch,Route,useRouteMatch } from "react-router-dom";
+import workData from "../../workData";
+import Project from "../../components/project/Project";
+import ProjectDetail from "../../components/project/ProjectDetail";
+import SlideIcon from "../../components/slideIcon/SlideIcon";
 
 const Work = () => {
 
   let { path, url } = useRouteMatch();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+    
+  }, [])
 
   return (
     <motion.div
@@ -30,20 +38,7 @@ const Work = () => {
         </motion.span>
       </div>
 
-      <div className="icon-container">
-        <motion.div whileHover={{ scale: 1.1 }} className="icon-div">
-          <Link to="/about" className="link">
-            <BsChevronCompactLeft className="icon" />
-            <span className="icon-font">ABOUT</span>
-          </Link>
-        </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }} className="icon-div">
-          <Link to="/" className="link">
-            <span className="icon-font">SKILL</span>
-            <BsChevronCompactRight className="icon" />
-          </Link>
-        </motion.div>
-      </div>
+      <SlideIcon left="/about" leftTitle="ABOUT" right="/skill" rightTitle="SKILL"/>
 
       <div className="project-container">
         <Switch>

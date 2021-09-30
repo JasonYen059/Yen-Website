@@ -47,7 +47,7 @@ const Home = () => {
         <Link to="/work" className="link-title">
           <motion.span whileHover={{ scale: 1.1 }}>WORK</motion.span>
         </Link>
-        <Link to="/about" className="link-title">
+        <Link to="/skill" className="link-title">
           <motion.span whileHover={{ scale: 1.1 }}>SKILL</motion.span>
         </Link>
       </motion.div>
