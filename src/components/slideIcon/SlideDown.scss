@@ -1,0 +1,11 @@
+.home-button-container {
+    .home-button {
+      font-size: 4vw;
+      color: rgb(167, 167, 167);
+      transition: all 0.5s ease;
+      &:hover {
+        margin-top: 1vw;
+        color: black;
+      }
+    }
+  }

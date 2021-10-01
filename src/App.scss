@@ -3,26 +3,16 @@
   height: 100vh;
 }
 
-[data-aos="anima-left"] {
-  transform: translate(-500px);
-  opacity: 0;
-  transition-property: transform, opacity;
-  &.aos-animate {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
-
-[data-aos="anima-right"] {
-  transform: translate(500px);
-  opacity: 0;
-  transition-property: transform, opacity;
-  &.aos-animate {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
-
 *{
   box-sizing: border-box;
 }
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+

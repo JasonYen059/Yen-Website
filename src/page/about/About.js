@@ -1,26 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.scss";
 import { motion } from "framer-motion";
 import man from "../../img/yellowcar.jpg";
 import SlideIcon from "../../components/slideIcon/SlideIcon";
-
+import SlideDown from "../../components/slideIcon/SlideDown";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   const container = {
-    hidden: { opacity: 0 ,transition: {
-      duration: 0.5}},
+    hidden: {
+      opacity: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
     show: {
       opacity: 1,
       transition: {
         duration: 0.5,
-        staggerChildren: 0.5,
       },
     },
-  };
-
-  const itemA = {
-    hidden: { opacity: 0, x: "-100vw" },
-    show: { opacity: 0.3, x: "-2vw", transition: { duration: 0.8 } },
   };
 
   return (
@@ -36,12 +41,26 @@ const About = () => {
           <img className="yen" src={man} alt="yen" />
         </div>
 
-        <motion.span variants={itemA} className="about-title">
-          ABOUT
-        </motion.span>
-        
-        <SlideIcon left="/skill" leftTitle="SKILL" right="/work" rightTitle="WORK"/>
+        <div className="title-container">
+          <motion.span
+            initial={{ opacity: 0, x: "100vw" }}
+            animate={{ opacity: 0.3, x: "-1.5vw" }}
+            transition={{ duration: 0.5 }}
+            className="work-title"
+          >
+            ABOUT
+          </motion.span>
+
+          <SlideDown />
+        </div>
       </div>
+
+      <SlideIcon
+        left="/skill"
+        leftTitle="SKILL"
+        right="/work"
+        rightTitle="WORK"
+      />
 
       <div className="introduce">
         <span className="intro-subtitle">WHY</span>
@@ -54,6 +73,7 @@ const About = () => {
       <div className="introduce">
         <span className="intro-subtitle">HOW</span>
       </div>
+    
     </motion.div>
   );
 };
