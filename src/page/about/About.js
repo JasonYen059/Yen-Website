@@ -43,10 +43,10 @@ const About = () => {
 
         <div className="title-container">
           <motion.span
-            initial={{ opacity: 0, x: "100vw" }}
-            animate={{ opacity: 0.3, x: "-1.5vw" }}
-            transition={{ duration: 0.5 }}
-            className="work-title"
+            initial={{ opacity: 0, y: "-50vw"}}
+            animate={{ opacity: 0.3, y:0 }}
+            transition={{ duration: 0.8 }}
+            className="about-title"
           >
             ABOUT
           </motion.span>

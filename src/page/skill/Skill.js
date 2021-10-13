@@ -34,15 +34,19 @@ const Skill = () => {
     {
       id: 1,
       text: [
-        "HTML5 _ CSS _ SCSS",
-        "JavaScript _ jQuery",
-        "Vue框架 _ Vue Cli開發 ",
+        "HTML5",
+        "CSS_SCSS",
+        "JavaScript",
+        "jQuery",
+        "Vue框架",
+        "Vue Cli開發",
         "VueX狀態管理",
-        "React框架 _ React Hooks",
+        "React框架",
+        "React Hooks",
         "React Router",
-        "Component 重複結構管理",
+        "Component 結構管理",
         "CRUD API 操作",
-        "Git _ Github",
+        "Git_Github",
         "Bootstrap 4",
         "Framer Motion",
       ],
@@ -86,8 +90,8 @@ const Skill = () => {
       <div className="title-container">
         <motion.span
           initial={{ opacity: 0, y: "-50vw" }}
-          animate={{ opacity: 0.3, y: 0 }}
-          transition={{ duration: 0.5 }}
+          animate={{ opacity: 0.7, y: 0 }}
+          transition={{ duration: 0.8 }}
           className="skill-title"
         >
           SKILL

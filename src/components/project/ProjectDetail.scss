@@ -1,26 +1,45 @@
+@mixin mobile{
+    @media(max-width:420px){
+      @content;
+    }
+  }
+
 .detail-container{
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Work Sans", sans-serif;
+    @include mobile{
+        width: 100%;
+    }
 
     .detail-img{
-        width: 80%;
+        width: 100%;
         height: auto;
+        
     }
 
     .detail-text-container{
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
         margin: 2vw 0;
+        @include mobile{
+            width: 90%;
+            
+        }
 
         .text-title{
-            font-size: 3vw;
+            width: 100%;
+            font-size: 4vw;
             font-weight: 700;
             font-style: italic;
             color: rgb(88, 88, 88);
+            @include mobile{
+                font-size: 5vw;
+            }
         }
 
         .text-content{
@@ -31,17 +50,25 @@
         }
 
         .close{
-            font-size: 1vw;
+            font-size: 1.5vw;
             font-style: italic;
             font-weight: 700;
             text-decoration: none;
             color: rgb(88, 88, 88);
             transition: all 0.5s ease;
+            margin: 1vw ;
+            border-bottom: 2px solid rgb(88, 88, 88);
+            @include mobile{
+                font-size: 4vw;
+            }
 
             &:hover{
-                font-size: 1.1vw;
+                font-size: 1.7vw;
                 color: black;
                 text-shadow: rgb(199, 199, 199) 2px 2px 2px;
+                @include mobile{
+                    font-size: 4.5vw;
+                }
             }
         }
     }

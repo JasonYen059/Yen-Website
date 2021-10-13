@@ -1,11 +1,17 @@
 import img from "./img/yellowcar.jpg";
 import img2 from "./img/jason.jpg";
+import covidLogo from "./img/covid_logo.png";
+import mooncakeLogo from "./img/mooncakeLogo.png";
+import motorLogo from "./img/yencustom.png";
+import musicLogo from "./img/playerlogo.jpg";
+import weatherLogo from "./img/weatherlogo.jpg";
+import hsrLogo from "./img/hsrlogo.jpg";
 
 const workData = [
   {
     id: 1,
     name: "COVID19_",
-    img: img,
+    img: covidLogo,
     describe: "This is covid app",
     url: "https://covid19.mouthird.com/#/",
     type: "APP",
@@ -19,7 +25,7 @@ const workData = [
   {
     id: 2,
     name: "MOONCAKE_",
-    img: img,
+    img: mooncakeLogo,
     describe: "This is mooncake app",
     url: "https://www.wpgmooncake.com/",
     type: "WEB_APP",
@@ -33,7 +39,7 @@ const workData = [
   {
     id: 3,
     name: "MOTOR_",
-    img: img,
+    img: motorLogo,
     describe: "This is motor app",
     url: "https://jasonyen059.github.io/Yenmotor/#/",
     type: "WEB",
@@ -47,7 +53,7 @@ const workData = [
   {
     id: 4,
     name: "MUSICPLAYER_",
-    img: img,
+    img: musicLogo,
     describe: "This is musicplayer app",
     url: "https://jasonyen059.github.io/Clock/",
     type: "WEB",
@@ -61,7 +67,7 @@ const workData = [
   {
     id: 5,
     name: "WEATHER_",
-    img: img,
+    img: weatherLogo,
     describe: "This is weather app",
     url: "https://jasonyen059.github.io/weatherApp/",
     type: "APP",
@@ -75,7 +81,7 @@ const workData = [
   {
     id: 6,
     name: "HST_",
-    img: img,
+    img: hsrLogo,
     describe: "This is hst app",
     url: "https://jasonyen059.github.io/Train-time-table/",
     type: "APP",

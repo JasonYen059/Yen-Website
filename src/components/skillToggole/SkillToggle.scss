@@ -3,37 +3,22 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom:5vw;
 
   .toggle-title {
     font-size: 8vw;
     font-style: italic;
     font-weight: 900;
-    color: gray;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    &:hover {
-      text-shadow: rgb(192, 192, 192) 5px 5px 5px;
-    }
-  }
-
-  .toggle-text-container {
-    width: 100%;
-    height: 300px;
+    color: rgb(90, 90, 90);
+    text-shadow: rgb(182, 182, 182) 4px 4px 2px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
 
     .link-container {
-      width: 50%;
-      height: 3vw;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      position: absolute;
-      bottom: 0;
-      margin-bottom: 0.5vw;
-
+      margin-top: 3.5vw;
+      margin-left: 1vw;
       .skill-link {
-        font-size: 2vw;
+        font-size: 2.5vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -41,7 +26,7 @@
           color: gray;
           transition: all 0.5s ease;
           &:hover {
-            font-size: 2.3vw;
+            font-size: 3vw;
             color: rgb(44, 44, 161);
           }
         }
@@ -49,21 +34,30 @@
           color: gray;
           transition: all 0.5s ease;
           &:hover {
-            font-size: 2.3vw;
+            font-size: 3vw;
             color: orange;
           }
         }
       }
     }
+  }
+
+  .toggle-text-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5vw;
+
+    
 
     .toggle-text {
-      width: 100%;
+      width: 45%;
       height: 100%;
-      font-size: 2vw;
+      font-size: 2.5vw;
       font-style: italic;
       font-weight: 900;
-      color: #c4c4c4;
-      margin: 1vw;
+      color: #cac7c7;
+      margin: 1vw 0;
     }
   }
 }

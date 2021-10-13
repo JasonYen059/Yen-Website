@@ -1,3 +1,9 @@
+@mixin mobile{
+    @media(max-width:420px){
+      @content;
+    }
+  }
+
 .project{
     width: 80%;
     background-color:white;
@@ -8,7 +14,12 @@
     font-family: "Work Sans", sans-serif;
     font-style: italic;
     font-weight: 700;
-    box-shadow: 5px 5px 5px rgb(219, 219, 219);
+    box-shadow: 5px 5px 5px rgb(238, 238, 238);
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+      
+    }
 
 
     .img-container{
@@ -17,12 +28,25 @@
         justify-content: center;
         align-items: center;
         margin: 2.5vw;
-
-        .projectimg{
-            width: 90%;
-            height: auto;
-            border-radius: 2vw;
+        @include mobile{
+            width: 100%;
+            margin: 5vw 0 4vw 0;
         }
+        .img-link{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .projectimg{
+                width: 100%;
+                height: auto;
+                border-radius: 2vw;
+                @include mobile{
+                    width: 80%;
+                }
+            }
+        }
+        
     }
 
     .text-container{
@@ -32,15 +56,29 @@
         justify-content: space-evenly;
         align-items: flex-start;
         margin: 2.5vw;
+        @include mobile{
+            width: 95%;
+            align-items: center;
+        }
 
-        .project-name{
-            font-size: 3vw;
-            font-weight: 700;
+        .text-title{
+
+            .project-name{
+                font-size: 3vw;
+                font-weight: 700;
+                @include mobile{
+                    font-size: 6vw;
+                }
+            }
+            .project-type{
+                font-size: 3vw;
+                font-weight: 700;
+                @include mobile{
+                    display: none;
+                }
+            }
         }
-        .project-type{
-            font-size: 3vw;
-            font-weight: 700;
-        }
+        
 
         .context{
             width: 80%;
@@ -48,15 +86,29 @@
             flex-direction: column;
             margin-top: 3vw;
             align-items: flex-end;
+            @include mobile{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                
+            }
 
             .project-describe{
                 font-size: 2vw;
                 font-weight: 500;
+                @include mobile{
+                    font-size: 4vw;
+                }
             }
             .project-link{
                 font-size: 2vw;
                 color: gray;
                 margin-top: 1vw;
+                @include mobile{
+                    margin-top: 2vw;
+                    font-size: 7vw;
+                    float: right;
+                }
             }
         }
         

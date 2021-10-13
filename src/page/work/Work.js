@@ -28,9 +28,9 @@ const Work = () => {
     >
       <div className="title-container">
         <motion.span
-          initial={{ opacity: 0, x: "100vw" }}
-          animate={{ opacity: 0.3, x: "-3vw" }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0}}
+          animate={{ opacity: 0.7}}
+          transition={{ duration: 1 }}
           className="work-title"
         >
           WORK

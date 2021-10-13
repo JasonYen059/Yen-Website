@@ -13,12 +13,12 @@ const Project = ({ data,url }) => {
   return (
     <div data-aos="zoom-in" data-aos-duration="1000" className="project">
       <div className="img-container">
-        <Link to={`${url}/${data.id}`}>
+        <Link to={`${url}/${data.id}`} className="img-link">
         <img src={data.img} alt={data.name} className="projectimg" />
         </Link>
       </div>
       <div className="text-container">
-        <div>
+        <div className="text-title">
           <h1 className="project-name">{data.name}</h1>
           <h2 className="project-type">{data.type}</h2>
         </div>
