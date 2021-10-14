@@ -10,7 +10,6 @@ const SlideIcon = ({ left, right, leftTitle, rightTitle }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0, x: "-10vw" }}
-        transition={{ duration: 0.3 }}
         whileHover={{ scale: 1.1 }}
         className="icon-div"
       >
@@ -23,7 +22,6 @@ const SlideIcon = ({ left, right, leftTitle, rightTitle }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0, x: "10vw" }}
-        transition={{ duration: 0.3 }}
         whileHover={{ scale: 1.1 }}
         className="icon-div"
       >

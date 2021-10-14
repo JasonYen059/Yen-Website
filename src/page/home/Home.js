@@ -10,8 +10,8 @@ const keyInfo = [
   {
     keyCode: 81,
     key: 'Q',
-    id: 'Chord-1',
-    url: '/loop1.mp3',
+    id: 'Melody',
+    url: '/melody.mp3',
     stopKeyCode:65,
     holdKeyCode: 90,
     holdKey:'Z'
@@ -19,8 +19,8 @@ const keyInfo = [
   {
     keyCode: 87,
     key: 'W',
-    id: 'Chord-2',
-    url: '/kold150.mp3',
+    id: 'Melody2',
+    url: '/reverse-melody.mp3',
     stopKeyCode:83,
     holdKeyCode: 88,
     holdKey:'X'
@@ -28,8 +28,8 @@ const keyInfo = [
   {
     keyCode: 69,
     key: 'E',
-    id: 'Chord-3',
-    url: '/kickass150.mp3',
+    id: 'Lead',
+    url: '/lead.mp3',
     stopKeyCode:68,
     holdKeyCode: 67,
     holdKey:'C'
@@ -37,8 +37,8 @@ const keyInfo = [
   {
     keyCode: 82,
     key: 'R',
-    id: 'Side-Stick',
-    url: '/puny160.mp3',
+    id: 'BreakMelody',
+    url: '/break-melody.mp3',
     stopKeyCode:70,
     holdKeyCode: 86,
     holdKey:'V'
@@ -46,8 +46,8 @@ const keyInfo = [
   {
     keyCode: 84,
     key: 'T',
-    id: 'Shaker',
-    url: '/drumloop.mp3',
+    id: 'Bass',
+    url: '/bass.mp3',
     stopKeyCode:71,
     holdKeyCode: 66,
     holdKey:'B'
@@ -55,8 +55,8 @@ const keyInfo = [
   {
     keyCode: 89,
     key: 'Y',
-    id: 'Open-HH',
-    url: '/drumloop150-2.mp3',
+    id: 'Hi-Hat',
+    url: '/hat.mp3',
     stopKeyCode:72,
     holdKeyCode: 78,
     holdKey:'N'
@@ -64,8 +64,8 @@ const keyInfo = [
   {
     keyCode: 85,
     key: 'U',
-    id: 'Closed-HH',
-    url: '/drumloop150-3.mp3',
+    id: 'Crash',
+    url: '/crash.mp3',
     stopKeyCode:74,
     holdKeyCode: 77,
     holdKey:'M'
@@ -73,8 +73,8 @@ const keyInfo = [
   {
     keyCode: 73,
     key: 'I',
-    id: 'Punchy-Kick',
-    url: '/drumloop160.mp3',
+    id: 'Kick',
+    url: '/kick.mp3',
     stopKeyCode:75,
     holdKeyCode: 188,
     holdKey:'<'

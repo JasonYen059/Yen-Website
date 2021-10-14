@@ -6,6 +6,7 @@ import motorLogo from "./img/yencustom.png";
 import musicLogo from "./img/playerlogo.jpg";
 import weatherLogo from "./img/weatherlogo.jpg";
 import hsrLogo from "./img/hsrlogo.jpg";
+import movie from "./img/movie.png";
 
 const workData = [
   {
@@ -35,9 +36,22 @@ const workData = [
       { num: 3, img: img2 },
     ],
   },
-
   {
     id: 3,
+    name: "MOVIE_",
+    img: movie,
+    describe: "This is movie app",
+    url: "https://jasonyen059.github.io/MovieApp/",
+    type: "WEB",
+    detailImg: [
+      { num: 1, img: img2 },
+      { num: 2, img: img },
+      { num: 3, img: img2 },
+    ],
+  },
+
+  {
+    id: 4,
     name: "MOTOR_",
     img: motorLogo,
     describe: "This is motor app",
@@ -51,7 +65,7 @@ const workData = [
   },
 
   {
-    id: 4,
+    id: 5,
     name: "MUSICPLAYER_",
     img: musicLogo,
     describe: "This is musicplayer app",
@@ -65,7 +79,7 @@ const workData = [
   },
 
   {
-    id: 5,
+    id: 6,
     name: "WEATHER_",
     img: weatherLogo,
     describe: "This is weather app",
@@ -79,7 +93,7 @@ const workData = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: "HST_",
     img: hsrLogo,
     describe: "This is hst app",
