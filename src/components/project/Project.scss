@@ -1,117 +1,135 @@
-@mixin mobile{
-    @media(max-width:420px){
-      @content;
+@mixin mobile {
+  @media (max-width: 420px) {
+    @content;
+  }
+}
+
+.project {
+  width: 75%;
+  background-color: white;
+  color: rgb(41, 41, 41);
+  margin: 20px;
+  display: flex;
+  border-radius: 2.5vw;
+  font-family: "Work Sans", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+
+  &:hover .text-container .context .project-link {
+    transition: all 0.5s ease-in-out;
+    color: orange;
+    transform: translateX(4vw);
+  }
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5vw;
+    @include mobile {
+      width: 100%;
+      margin: 5vw 0 4vw 0;
+    }
+    .img-div {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .projectimg {
+        width: 100%;
+        height: auto;
+        @include mobile {
+          width: 80%;
+        }
+      }
     }
   }
 
-.project{
-    width: 80%;
-    background-color:white;
-    color: rgb(41, 41, 41);
-    margin: 20px;
+  .text-container {
+    width: 50%;
     display: flex;
-    border-radius: 2.5vw;
-    font-family: "Work Sans", sans-serif;
-    font-style: italic;
-    font-weight: 700;
-    // box-shadow: 5px 5px 5px rgb(238, 238, 238);
-    @include mobile{
-        flex-direction: column;
-        align-items: center;
-      
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    overflow: hidden;
+    margin: 2.5vw;
+    @include mobile {
+      width: 95%;
+      align-items: center;
     }
 
+    .text-title {
+      .project-name {
+        font-size: 2.3vw;
+        font-weight: 700;
+        @include mobile {
+          font-size: 6vw;
+        }
+      }
+      .project-type {
+        font-size: 2.3vw;
+        font-weight: 700;
+        @include mobile {
+          display: none;
+        }
+      }
+    }
 
-    .img-container{
-        width: 50%; 
-        display: flex;
+    .context {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 2vw;
+      align-items: flex-end;
+      @include mobile {
+        width: 100%;
         justify-content: center;
         align-items: center;
-        margin: 2.5vw;
-        @include mobile{
-            width: 100%;
-            margin: 5vw 0 4vw 0;
+      }
+
+      .describe-div{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+      }
+      .project-describe {
+        font-style: normal;
+        font-size: 1.5vw;
+        font-weight: 500;
+        @include mobile {
+          font-size: 3vw;
         }
-        .img-link{
-            width: 70%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .projectimg{
-                width: 80%;
-                height: auto;
-                border-radius: 2vw;
-                @include mobile{
-                    width: 80%;
-                }
-            }
+      }
+      .project-link {
+        font-size: 1.5vw;
+        line-height: 1.5vw;
+        text-align: end;
+        color: gray;
+        margin-top: 1.5vw;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+        transform: translateX(6.5vw);
+
+        @include mobile {
+          margin-top: 2vw;
+          font-size: 7vw;
+          float: right;
         }
-        
+
+        span {
+          margin-left: 0.5vw;
+          font-size: 1.5vw;
+          transform: translateY(0.2vw);
+          position: absolute;
+        }
+      }
     }
-
-    .text-container{
-        width: 50%; 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        margin: 2.5vw;
-        @include mobile{
-            width: 95%;
-            align-items: center;
-        }
-
-        .text-title{
-
-            .project-name{
-                font-size: 2.8vw;
-                font-weight: 700;
-                @include mobile{
-                    font-size: 6vw;
-                }
-            }
-            .project-type{
-                font-size: 2.8vw;
-                font-weight: 700;
-                @include mobile{
-                    display: none;
-                }
-            }
-        }
-        
-
-        .context{
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-            margin-top: 3vw;
-            align-items: flex-end;
-            @include mobile{
-                width: 100%;
-                justify-content: center;
-                align-items: center;
-                
-            }
-
-            .project-describe{
-                font-size: 2vw;
-                font-weight: 500;
-                @include mobile{
-                    font-size: 4vw;
-                }
-            }
-            .project-link{
-                font-size: 2vw;
-                color: gray;
-                margin-top: 1vw;
-                @include mobile{
-                    margin-top: 2vw;
-                    font-size: 7vw;
-                    float: right;
-                }
-            }
-        }
-        
-    }
-
   }
+}

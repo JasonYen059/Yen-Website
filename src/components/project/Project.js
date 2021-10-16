@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import "./Project.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { BsLink } from "react-icons/bs";
 import {Link} from "react-router-dom";
+import { AiOutlineSwapRight } from "react-icons/ai";
 
 const Project = ({ data,url }) => {
   useEffect(() => {
@@ -13,9 +13,9 @@ const Project = ({ data,url }) => {
   return (
     <div data-aos="zoom-in" data-aos-duration="1000" className="project">
       <div className="img-container">
-        <Link to={`${url}/${data.id}`} className="img-link">
+        <div className="img-div">
         <img src={data.img} alt={data.name} className="projectimg" />
-        </Link>
+        </div>
       </div>
       <div className="text-container">
         <div className="text-title">
@@ -23,10 +23,15 @@ const Project = ({ data,url }) => {
           <h2 className="project-type">{data.type}</h2>
         </div>
         <div className="context">
+          <div className="describe-div"> 
           <span className="project-describe">{data.describe}</span>
-          <a className="project-link" href={data.url}>
-            <BsLink />
-          </a>
+          </div>
+          <Link to={`${url}/${data.id}`} className="project-link" href={data.url}>
+            READ MORE 
+            <span>
+            <AiOutlineSwapRight/>
+            </span>
+          </Link>
         </div>
       </div>
     </div>
