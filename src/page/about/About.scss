@@ -1,3 +1,15 @@
+@mixin mobile {
+  @media (max-width: 460px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
 .about-container {
   width: 100%;
   background-color: white;
@@ -40,6 +52,13 @@
         margin-top: -5vw;
         margin-left: -1vw;
       }
+
+      .home-button-container {
+        .home-button {
+          color: white;
+          opacity: 0.8;
+        }
+      }
     }
   }
 
@@ -80,10 +99,13 @@
         min-width: 120px;
         border-radius: 50%;
         margin: 5vw 0 2vw 0;
+        @include pad {
+          margin: 5vw 0 3vw 0;
+        }
       }
       .name {
-        font-size: 2vw;
-        font-weight: 700;
+        width: 10vw;
+        min-width: 100px;
       }
 
       .info-link {
@@ -92,32 +114,45 @@
         justify-content: center;
         align-items: center;
         margin: 20px 0 40px 0;
+        @include pad {
+          margin: 3vw 0 3vw 0;
+        }
 
         .info-link-a {
           width: 40px;
           height: 40px;
-          border: 1px solid rgb(65, 65, 65);
+          border: none;
           border-radius: 50%;
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 25px;
-          color: rgb(65, 65, 65);
+          font-size: 3vw;
+          color: rgb(175, 175, 175);
           margin-right: 10px;
-          background-color: white;
+          background: none;
           cursor: pointer;
           transition: all 0.5s ease;
 
+          @include pad {
+            font-size: 7vw;
+            margin-right: 0;
+          }
+
           &:hover {
-            color: white;
-            background-color: rgb(65, 65, 65);
+            color: rgb(65, 65, 65);
           }
         }
       }
 
       .contact {
         position: absolute;
-        bottom: 0;
+        bottom: -2%;
+        span {
+          font-size: 1.5rem;
+          @include pad {
+            font-size: 14px;
+          }
+        }
       }
     }
 
@@ -127,20 +162,26 @@
       justify-content: center;
       align-items: center;
       width: 80%;
+      @include pad {
+        width: 95%;
+      }
 
       .info {
         width: 100%;
-        margin: 4vw 0;
+        margin: 3vw 0 9vw 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .info-text {
-          width: 80%;
+          width: 50%;
           font-size: 18px;
           line-height: 1.75rem;
           font-weight: 700;
+          @include mobile {
+            font-size: 14px;
+          }
         }
       }
     }

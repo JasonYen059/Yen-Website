@@ -1,5 +1,10 @@
 @mixin mobile{
-    @media(max-width:420px){
+    @media(max-width:460px){
+      @content;
+    }
+  }
+  @mixin pad{
+    @media(max-width:1000px){
       @content;
     }
   }
@@ -10,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     font-family: "Work Sans", sans-serif;
-    @include mobile{
+    @include pad{
         width: 100%;
     }
 
@@ -30,12 +35,15 @@
 
         .text-title{
             width: 100%;
-            font-size: 2vw;
+            font-size: 30px;
             font-weight: 700;
             font-style: italic;
             color: rgb(88, 88, 88);
+            @include pad{
+                font-size: 20px;    
+            }
             @include mobile{
-                font-size: 5vw;
+                font-size: 6vw;
             }
         }
 
@@ -48,23 +56,24 @@
             margin: 1vw 0;
             color: rgb(131, 130, 130);
             letter-spacing: 2px;
+            @include pad{
+                font-size: 15px;
+                line-height: 20px;
+                margin: 2vw 0;
+            }
 
             .frontend-usage{
                 width: 100%;
                 margin-top: 1vw;
                 display: flex;
-
+                flex-direction: column;
 
                 .frontend-title{
-                    width: 12%;
                     color: rgb(88, 88, 88);
                     font-weight: 700;
+                    margin-top: 2vw ;
                 }
 
-                .frontend-text{
-                    width: 88%;
-                   
-                }
             }
         }
 
@@ -73,6 +82,10 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
+
+            @include mobile{
+                justify-content: space-between;
+            }
             .close{
                 font-size: 1.5vw;
                 font-style: italic;
