@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Yen-Website/static/css/main.42a70d5f.chunk.css",
-    "main.js": "/Yen-Website/static/js/main.b3a2151d.chunk.js",
-    "main.js.map": "/Yen-Website/static/js/main.b3a2151d.chunk.js.map",
+    "main.js": "/Yen-Website/static/js/main.ca1c2204.chunk.js",
+    "main.js.map": "/Yen-Website/static/js/main.ca1c2204.chunk.js.map",
     "runtime-main.js": "/Yen-Website/static/js/runtime-main.3527f1f2.js",
     "runtime-main.js.map": "/Yen-Website/static/js/runtime-main.3527f1f2.js.map",
     "static/js/2.c5d6dd2c.chunk.js": "/Yen-Website/static/js/2.c5d6dd2c.chunk.js",
@@ -44,6 +44,6 @@
     "static/js/runtime-main.3527f1f2.js",
     "static/js/2.c5d6dd2c.chunk.js",
     "static/css/main.42a70d5f.chunk.css",
-    "static/js/main.b3a2151d.chunk.js"
+    "static/js/main.ca1c2204.chunk.js"
   ]
 }
