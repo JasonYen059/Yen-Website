@@ -58,11 +58,11 @@ const Pad = ({ keyInfo }) => {
   // };
 
   const presshold = useCallback(() => setHold((prevIsOn) => !prevIsOn), []);
-
+console.log(keyInfo.url,typeof(keyInfo.url));
   return (
     <div className="clipall">
       <div onClick={playsound} className={`pad-container ${tap && "active"}`}>
-        <audio className="clip" id={keyInfo.key} src={keyInfo.url} />
+        <audio className="clip" id={keyInfo.key} src={process.env.PUBLIC_URL + keyInfo.url} />
         <span className="infokey">{keyInfo.key}</span>
       </div>
       <div

@@ -11,7 +11,7 @@ const keyInfo = [
     keyCode: 49,
     key: '1',
     id: 'Melody',
-    url: '/melody.mp3',
+    url: "/melody.mp3",
     stopKeyCode:65,
     holdKeyCode: 81,
     holdKey:'Q'
@@ -20,7 +20,7 @@ const keyInfo = [
     keyCode: 50,
     key: '2',
     id: 'Melody2',
-    url: '/reverse-melody.mp3',
+    url: "/reverse-melody.mp3",
     stopKeyCode:83,
     holdKeyCode: 87,
     holdKey:'W'
@@ -29,7 +29,7 @@ const keyInfo = [
     keyCode: 51,
     key: '3',
     id: 'Lead',
-    url: '/lead.mp3',
+    url: "/lead.mp3",
     stopKeyCode:68,
     holdKeyCode: 69,
     holdKey:'E'
@@ -38,7 +38,7 @@ const keyInfo = [
     keyCode: 52,
     key: '4',
     id: 'BreakMelody',
-    url: '/break-melody.mp3',
+    url: "/break-melody.mp3",
     stopKeyCode:70,
     holdKeyCode: 82,
     holdKey:'R'
@@ -47,7 +47,7 @@ const keyInfo = [
     keyCode: 65,
     key: 'A',
     id: 'Bass',
-    url: '/bass.mp3',
+    url: "/bass.mp3",
     stopKeyCode:71,
     holdKeyCode: 90,
     holdKey:'Z'
@@ -56,7 +56,7 @@ const keyInfo = [
     keyCode: 83,
     key: 'S',
     id: 'Hi-Hat',
-    url: '/hat.mp3',
+    url: "/hat.mp3",
     stopKeyCode:72,
     holdKeyCode: 88,
     holdKey:'X'
@@ -65,7 +65,7 @@ const keyInfo = [
     keyCode: 68,
     key: 'D',
     id: 'Crash',
-    url: '/crash.mp3',
+    url: "/crash.mp3",
     stopKeyCode:74,
     holdKeyCode: 67,
     holdKey:'C'
@@ -74,7 +74,7 @@ const keyInfo = [
     keyCode: 70,
     key: 'F',
     id: 'Kick',
-    url: '/kick.mp3',
+    url: "/kick.mp3",
     stopKeyCode:75,
     holdKeyCode: 86,
     holdKey:'V'
