@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Yen-Website/static/css/main.42a70d5f.chunk.css",
-    "main.js": "/Yen-Website/static/js/main.f4d447f2.chunk.js",
-    "main.js.map": "/Yen-Website/static/js/main.f4d447f2.chunk.js.map",
+    "main.js": "/Yen-Website/static/js/main.2780d774.chunk.js",
+    "main.js.map": "/Yen-Website/static/js/main.2780d774.chunk.js.map",
     "runtime-main.js": "/Yen-Website/static/js/runtime-main.3527f1f2.js",
     "runtime-main.js.map": "/Yen-Website/static/js/runtime-main.3527f1f2.js.map",
     "static/js/2.c5d6dd2c.chunk.js": "/Yen-Website/static/js/2.c5d6dd2c.chunk.js",
@@ -24,9 +24,6 @@
     "static/media/motor-detail3.5715572b.jpg": "/Yen-Website/static/media/motor-detail3.5715572b.jpg",
     "static/media/motor-detail4.738a586d.jpg": "/Yen-Website/static/media/motor-detail4.738a586d.jpg",
     "static/media/motor-detail5.9bb582e7.jpg": "/Yen-Website/static/media/motor-detail5.9bb582e7.jpg",
-    "static/media/movie-detail1.9bc8755f.jpg": "/Yen-Website/static/media/movie-detail1.9bc8755f.jpg",
-    "static/media/movie-detail2.aa04d30c.jpg": "/Yen-Website/static/media/movie-detail2.aa04d30c.jpg",
-    "static/media/movie-detail3.cee6da76.jpg": "/Yen-Website/static/media/movie-detail3.cee6da76.jpg",
     "static/media/music-detail1.ff186c60.jpg": "/Yen-Website/static/media/music-detail1.ff186c60.jpg",
     "static/media/music-detail2.1ae80ddb.jpg": "/Yen-Website/static/media/music-detail2.1ae80ddb.jpg",
     "static/media/music-detail3.82f14399.jpg": "/Yen-Website/static/media/music-detail3.82f14399.jpg",
@@ -44,6 +41,6 @@
     "static/js/runtime-main.3527f1f2.js",
     "static/js/2.c5d6dd2c.chunk.js",
     "static/css/main.42a70d5f.chunk.css",
-    "static/js/main.f4d447f2.chunk.js"
+    "static/js/main.2780d774.chunk.js"
   ]
 }
