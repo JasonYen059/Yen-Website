@@ -4,12 +4,10 @@ import motorLogo from "./img/motor_logo.png";
 import musicLogo from "./img/music_logo.png";
 import weatherLogo from "./img/weather_logo.png";
 import hsrLogo from "./img/hsr_logo.png";
-import movie from "./img/movie_logo.png";
 
 import {COVID1,COVID2 } from "./img/covid/covidImg";
 import {MOONCAKE1,MOONCAKE2,MOONCAKE3,MOONCAKE4} from "./img/moocake/mooncake";
 import { MOTOR1,MOTOR2,MOTOR3,MOTOR4,MOTOR5} from "./img/motor/motor";
-import { MOVIE1, MOVIE2,MOVIE3 } from "./img/movie/movie";
 import { MUSIC1,MUSIC2,MUSIC3 } from "./img/music/music";
 import { WEATHER1,WEATHER2 } from "./img/weather/weather";
 import { THSRC1,THSRC2,THSRC3 } from "./img/thsrc/thsrc";
@@ -19,7 +17,7 @@ const workData = [
     id: 1,
     name: "COVID19",
     img: covidLogo,
-    describe: "用於查看所在地以及全國新冠肺炎疫情",
+    describe: "用於查看所在地以及全國新冠肺炎疫情 ",
     contents:"因新冠肺炎疫情嚴重，故希望做一個可以方便查找疫情相關資訊以及新聞的作品，減少觀看疫情相關資訊以及重點新聞的時間。",
     frontend:"Vue.js、Vue-Router、Vuex ， 串接 Google map API，API資料介接、切版、頁面響應、資料渲染、與後端協同開發。",
     url: "https://covid19.mouthird.com/#/",
@@ -48,22 +46,6 @@ const workData = [
   },
   {
     id: 3,
-    name: "MOVIE",
-    img: movie,
-    describe: "用於查詢電影以及戲劇資訊",
-    contents:"透過OMDB API取得電影及戲劇相關資訊，使用者可以輸入關鍵字進行搜尋，並利用Redux-Toolkit 進行資料處理",
-    frontend:"React.js、React-hooks、Redux-Toolkit 、React-Router， OMDB API資料介接、切版、資料渲染。",
-    url: "https://jasonyen059.github.io/MovieApp/",
-    type: "WEB",
-    detailImg: [
-      { num: 1, img: MOVIE1 },
-      { num: 2, img: MOVIE2 },
-      { num: 3, img: MOVIE3 },
-    ],
-  },
-
-  {
-    id: 4,
     name: "MOTOR",
     img: motorLogo,
     describe: "客製檔車工作室網站設計",
@@ -81,11 +63,11 @@ const workData = [
   },
 
   {
-    id: 5,
+    id: 4,
     name: "MUSICPLAYER",
     img: musicLogo,
     describe: "復古音樂播放APP",
-    contents:"現代社會流行復古的元素，黑膠唱片更是經典的產品，將黑膠唱片視覺化，製成數位音樂播放器",
+    contents:"現代社會流行復古的元素，黑膠唱片更是經典的產品，將黑膠唱片視覺化，製成數位音樂播放器。",
     frontend:"JavaScript、Html、Css",
     url: "https://jasonyen059.github.io/Clock/",
     type: "WEB",
@@ -97,7 +79,7 @@ const workData = [
   },
 
   {
-    id: 6,
+    id: 5,
     name: "WEATHER",
     img: weatherLogo,
     describe: "查詢台灣各縣市一週天氣狀況",
@@ -112,7 +94,7 @@ const workData = [
   },
 
   {
-    id: 7,
+    id: 6,
     name: "THSRC",
     img: hsrLogo,
     describe: "查詢台灣高鐵班次及票價",

@@ -12,7 +12,7 @@ const ProjectDetail = () => {
     const newData = workData.filter((data) => data.id === +Id);
     setData(newData[0]);
     setDetailImg(newData[0].detailImg);
-    console.log(newData);
+    
   }, [Id]);
 
   return (

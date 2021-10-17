@@ -44,6 +44,7 @@ const Skill = () => {
         "React框架",
         "React Hooks",
         "React Router",
+        "Redux Toolkit",
         "Component 結構管理",
         "CRUD API 操作",
         "Git_Github",

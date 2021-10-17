@@ -10,8 +10,6 @@ import SlideDown from "../../components/slideIcon/SlideDown";
 
 const Work = () => {
   let { path, url } = useRouteMatch();
-  let test = useRouteMatch();
-  console.log(test);
 
   useEffect(() => {
     window.scrollTo({

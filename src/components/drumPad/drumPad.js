@@ -17,9 +17,6 @@ const Pad = ({ keyInfo }) => {
     if (e.keyCode === keyInfo.keyCode) {
       playsound();
     }
-    // if (e.keyCode === keyInfo.stopKeyCode) {
-    //   stopsound();
-    // }
     if (e.keyCode === keyInfo.holdKeyCode) {
       presshold();
     }
@@ -43,22 +40,11 @@ const Pad = ({ keyInfo }) => {
       audioTag.currentTime = 0;
       setTap(false);
     }
-    // audioTag.currentTime = 0;
-    // audioTag.play();
-    // setTap(true);
-    // audioTag.onended = ()=>{
-    //   setTap(false);
-    // }
+   
   };
 
-  // const stopsound = () => {
-  //   const audioTag = document.getElementById(keyInfo.key);
-  //   audioTag.pause();
-  //   setTap(false);
-  // };
 
   const presshold = useCallback(() => setHold((prevIsOn) => !prevIsOn), []);
-console.log(keyInfo.url,typeof(keyInfo.url));
   return (
     <div className="clipall">
       <div onClick={playsound} className={`pad-container ${tap && "active"}`}>
