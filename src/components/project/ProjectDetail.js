@@ -29,13 +29,12 @@ const ProjectDetail = () => {
       })}
       <div className="detail-text-container">
         <h1 className="text-title">
-          {data.name}
-          {data.type}
+          {data.name} _ {data.type}
         </h1>
         <div className="text-content">
           <span className="describe">{data.contents}</span>
           <div className="frontend-usage">
-            <span className="frontend-title">Front-End :</span>
+            <span className="frontend-title">Front-End </span>
             <span className="frontend-text">{data.frontend}</span>
           </div>
         </div>

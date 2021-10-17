@@ -1,6 +1,5 @@
 import "./App.scss";
 import { Switch, Route, useLocation } from "react-router-dom";
-import "aos/dist/aos.css";
 import React from "react";
 import { AnimatePresence } from "framer-motion";
 import Home from "./page/home/Home";

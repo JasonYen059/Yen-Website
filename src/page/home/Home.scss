@@ -1,3 +1,9 @@
+@mixin pad {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
 .home-container {
   width: 100%;
   height: 100%;
@@ -39,6 +45,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    @include pad {
+      width: 95%;
+    }
 
     .drumPad {
       width: 100%;
@@ -64,6 +73,11 @@
       position: absolute;
       right: 12%;
       top: 12%;
+      @include pad {
+        width: 43%;
+        right: 8%;
+        top: 10%;
+      }
 
       .text-title {
         font-size: 2.7vw;
@@ -71,12 +85,18 @@
         margin-bottom: 1vw;
         color: rgb(71, 71, 71);
         font-family: 'Play', sans-serif;
+        @include pad {
+          font-size: 4.7vw;
+        }
       }
 
       .text-subtitle {
         font-weight: 500;
         font-size: 1.3vw;
         color: gray;
+        @include pad {
+          font-size: 2vw;
+        }
       }
     }
 
@@ -101,11 +121,18 @@
           animation-play-state: paused;
           color: rgb(255, 136, 0);
         }
+
+        @include pad {
+          font-size: 3.8vw;
+        }
       }
     }
   }
 
   .footer-container {
     font-weight: 700;
+    @include pad {
+      margin-top: 3vw;
+    }
   }
 }

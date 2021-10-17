@@ -4,11 +4,11 @@ import Exp from "../../components/about-exp/Exp";
 import { motion } from "framer-motion";
 import yenbg from "../../img/yenbg2.jpg";
 import yen from "../../img/yenPhoto.jpg";
+import name from "../../img/name.png";
 import SlideIcon from "../../components/slideIcon/SlideIcon";
 import SlideDown from "../../components/slideIcon/SlideDown";
-import { FiMail, FiPhone } from "react-icons/fi";
-import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
-import { FaFacebookF } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { AiFillGithub, AiFillInstagram,AiFillFacebook ,AiFillPhone} from "react-icons/ai";
 
 const About = () => {
   const [mail, setMail] = useState(false);
@@ -52,7 +52,7 @@ const About = () => {
         <div className="title-container">
           <motion.span
             initial={{ opacity: 0, y: "-50vw" }}
-            animate={{ opacity: 0.3, y: 0 }}
+            animate={{ opacity: 0.6, y: 0 }}
             transition={{ duration: 0.8 }}
             className="about-title"
           >
@@ -73,27 +73,26 @@ const About = () => {
       <div className="introduce">
         <div className="introduce-top">
           <img className="yenPhoto" src={yen} alt="yenPhoto" />
-          <span className="name">嚴晨霖</span>
-          <span className="name">Jason Yen</span>
+          <img className="name" src={name} alt="name"/>
           <div className="info-link">
-            <button
+            <div
               className="info-link-a"
               onClick={() => {
                 setMail(!mail);
                 setPhone(false);
               }}
             >
-              <FiMail />
-            </button>
-            <button
+              <MdEmail />
+            </div>
+            <div
               className="info-link-a"
               onClick={() => {
                 setPhone(!phone);
                 setMail(false);
               }}
             >
-              <FiPhone />
-            </button>
+              <AiFillPhone />
+            </div>
             <a className="info-link-a" href="https://github.com/JasonYen059">
               <AiFillGithub />
             </a>
@@ -104,7 +103,7 @@ const About = () => {
               className="info-link-a"
               href="https://www.facebook.com/profile.php?id=100002196454678"
             >
-              <FaFacebookF />
+              <AiFillFacebook />
             </a>
           </div>
           {mail && (
@@ -125,9 +124,9 @@ const About = () => {
         <div className="introduce-bottom">
           <div className="info">
             <span className="info-text">
-              過去於互動設計公司擔任軟體工程師，因為是接案性質因此需要不斷精進並整合不同技術，包括前後端開發、軟硬體整合、硬體開發…等等。對前端領域有強烈的熱情，除了完成工作上的專案以外，常常利用下班時間學習、進修新的前後端技術與參加聚會，也會利用閒暇時間將過去工作所使用的技術與前後端進行整合的side
-              project以求不斷充實並精進自己。過去於互動設計公司擔任軟體工程師，因為是接案性質因此需要不斷精進並整合不同技術，包括前後端開發、軟硬體整合、硬體開發…等等。對前端領域有強烈的熱情，除了完成工作上的專案以外，常常利用下班時間學習、進修新的前後端技術與參加聚會，也會利用閒暇時間將過去工作所使用的技術與前後端進行整合的side
-              project以求不斷充實並精進自己。
+              先前於廣告業擔任活動企劃與執行的職位，但過去在研究所時期接觸 UI 設計相關知識，因此對使用者介面及前端非常有興趣，便離職開始自學前端設計。
+              自學前期，融合個人休閒興趣製作 side project ，將元素帶入作品中。自學後期與 UI設計師、前端、後端工程師合作開發project，學習團隊之間的溝通與討論。
+              後續並透過朋友接案，負責前端的部分，累積實作相關經驗。期望未來自己能在前端領域繼續鑽研、深耕，並且持續精進自身實力與經驗，也希望能與未來合作夥伴打造出令使用者滿意的產品。
             </span>
           </div>
           <Exp/>

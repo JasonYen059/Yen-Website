@@ -8,100 +8,82 @@ import Pad from "../../components/drumPad/drumPad";
 
 const keyInfo = [
   {
-    keyCode: 81,
-    key: 'Q',
+    keyCode: 49,
+    key: '1',
     id: 'Melody',
     url: '/melody.mp3',
     stopKeyCode:65,
+    holdKeyCode: 81,
+    holdKey:'Q'
+  },
+  {
+    keyCode: 50,
+    key: '2',
+    id: 'Melody2',
+    url: '/reverse-melody.mp3',
+    stopKeyCode:83,
+    holdKeyCode: 87,
+    holdKey:'W'
+  },
+  {
+    keyCode: 51,
+    key: '3',
+    id: 'Lead',
+    url: '/lead.mp3',
+    stopKeyCode:68,
+    holdKeyCode: 69,
+    holdKey:'E'
+  },
+  {
+    keyCode: 52,
+    key: '4',
+    id: 'BreakMelody',
+    url: '/break-melody.mp3',
+    stopKeyCode:70,
+    holdKeyCode: 82,
+    holdKey:'R'
+  },
+  {
+    keyCode: 65,
+    key: 'A',
+    id: 'Bass',
+    url: '/bass.mp3',
+    stopKeyCode:71,
     holdKeyCode: 90,
     holdKey:'Z'
   },
   {
-    keyCode: 87,
-    key: 'W',
-    id: 'Melody2',
-    url: '/reverse-melody.mp3',
-    stopKeyCode:83,
+    keyCode: 83,
+    key: 'S',
+    id: 'Hi-Hat',
+    url: '/hat.mp3',
+    stopKeyCode:72,
     holdKeyCode: 88,
     holdKey:'X'
   },
   {
-    keyCode: 69,
-    key: 'E',
-    id: 'Lead',
-    url: '/lead.mp3',
-    stopKeyCode:68,
+    keyCode: 68,
+    key: 'D',
+    id: 'Crash',
+    url: '/crash.mp3',
+    stopKeyCode:74,
     holdKeyCode: 67,
     holdKey:'C'
   },
   {
-    keyCode: 82,
-    key: 'R',
-    id: 'BreakMelody',
-    url: '/break-melody.mp3',
-    stopKeyCode:70,
-    holdKeyCode: 86,
-    holdKey:'V'
-  },
-  {
-    keyCode: 84,
-    key: 'T',
-    id: 'Bass',
-    url: '/bass.mp3',
-    stopKeyCode:71,
-    holdKeyCode: 66,
-    holdKey:'B'
-  },
-  {
-    keyCode: 89,
-    key: 'Y',
-    id: 'Hi-Hat',
-    url: '/hat.mp3',
-    stopKeyCode:72,
-    holdKeyCode: 78,
-    holdKey:'N'
-  },
-  {
-    keyCode: 85,
-    key: 'U',
-    id: 'Crash',
-    url: '/crash.mp3',
-    stopKeyCode:74,
-    holdKeyCode: 77,
-    holdKey:'M'
-  },
-  {
-    keyCode: 73,
-    key: 'I',
+    keyCode: 70,
+    key: 'F',
     id: 'Kick',
     url: '/kick.mp3',
     stopKeyCode:75,
-    holdKeyCode: 188,
-    holdKey:'<'
+    holdKeyCode: 86,
+    holdKey:'V'
   }
   
 ];
 
 const Home = () => {
-  // const [X, setX] = useState(0);
-  // const [windowSize, setWindowSize] = useState(undefined);
-
-  // const setmouseEvent = (e) => {
-  //   let xmove = e.nativeEvent.clientX - windowSize / 2;
-  //   setX(-xmove);
-  // };
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setWindowSize(window.innerWidth);
-  //   };
-  //   window.addEventListener("resize", handleResize);
-  //   handleResize();
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
-
+ 
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -109,22 +91,6 @@ const Home = () => {
       exit={{ opacity: 0 }}
       className="home-container"
     >
-      {/* <motion.div
-        animate={{ x: X }}
-        transition={{ type: "spring", damping: 20 }}
-        className="link-container"
-        onMouseMove={setmouseEvent}
-      >
-        <Link to="/about" className="link-title">
-          <motion.span whileHover={{ scale: 1.1 }}>ABOUT</motion.span>
-        </Link>
-        <Link to="/work" className="link-title">
-          <motion.span whileHover={{ scale: 1.1 }}>WORK</motion.span>
-        </Link>
-        <Link to="/skill" className="link-title">
-          <motion.span whileHover={{ scale: 1.1 }}>SKILL</motion.span>
-        </Link>
-      </motion.div> */}
 
       <div className="drumPad-container">
         <img src={drumPad} alt="drumPad" className="drumPad" />

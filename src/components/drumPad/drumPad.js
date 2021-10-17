@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
 import "./drumPad.scss";
+import { ImLoop2 } from "react-icons/im";
 
 const Pad = ({ keyInfo }) => {
   const [tap, setTap] = useState(false);
@@ -16,9 +17,9 @@ const Pad = ({ keyInfo }) => {
     if (e.keyCode === keyInfo.keyCode) {
       playsound();
     }
-    if (e.keyCode === keyInfo.stopKeyCode) {
-      stopsound();
-    }
+    // if (e.keyCode === keyInfo.stopKeyCode) {
+    //   stopsound();
+    // }
     if (e.keyCode === keyInfo.holdKeyCode) {
       presshold();
     }
@@ -30,19 +31,31 @@ const Pad = ({ keyInfo }) => {
 
   const playsound = () => {
     const audioTag = document.getElementById(keyInfo.key);
-    audioTag.currentTime = 0;
-    audioTag.play();
-    setTap(true);
-    audioTag.onended = ()=>{
+    if(audioTag.currentTime === 0){
+      audioTag.play();
+      setTap(true);
+      audioTag.onended = ()=>{
+        audioTag.currentTime = 0;
+        setTap(false);
+      }
+    }else{
+      audioTag.pause();
+      audioTag.currentTime = 0;
       setTap(false);
     }
+    // audioTag.currentTime = 0;
+    // audioTag.play();
+    // setTap(true);
+    // audioTag.onended = ()=>{
+    //   setTap(false);
+    // }
   };
 
-  const stopsound = () => {
-    const audioTag = document.getElementById(keyInfo.key);
-    audioTag.pause();
-    setTap(false);
-  };
+  // const stopsound = () => {
+  //   const audioTag = document.getElementById(keyInfo.key);
+  //   audioTag.pause();
+  //   setTap(false);
+  // };
 
   const presshold = useCallback(() => setHold((prevIsOn) => !prevIsOn), []);
 
@@ -50,14 +63,15 @@ const Pad = ({ keyInfo }) => {
     <div className="clipall">
       <div onClick={playsound} className={`pad-container ${tap && "active"}`}>
         <audio className="clip" id={keyInfo.key} src={keyInfo.url} />
-        {keyInfo.key}
+        <span className="infokey">{keyInfo.key}</span>
       </div>
       <div
         onClick={presshold}
         id={keyInfo.id}
-        className={`stop-btn ${hold && "holdactive"}`}
+        className={`loop-btn ${hold && "holdactive"}`}
       >
-          {keyInfo.holdKey}
+          <span className="infokey-loop">{keyInfo.holdKey}</span>
+          <span className="loop-text"><ImLoop2/></span>
       </div>
     </div>
   );

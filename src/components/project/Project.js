@@ -1,17 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Project.scss";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import {Link} from "react-router-dom";
 import { AiOutlineSwapRight } from "react-icons/ai";
 
 const Project = ({ data,url }) => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
-
+  
   return (
-    <div data-aos="zoom-in" data-aos-duration="1000" className="project">
+    <div  className="project">
       <div className="img-container">
         <div className="img-div">
         <img src={data.img} alt={data.name} className="projectimg" />
@@ -27,8 +22,8 @@ const Project = ({ data,url }) => {
           <span className="project-describe">{data.describe}</span>
           </div>
           <Link to={`${url}/${data.id}`} className="project-link" href={data.url}>
-            READ MORE 
-            <span>
+            <span className="readmore">READ MORE</span>
+            <span className="link-icon">
             <AiOutlineSwapRight/>
             </span>
           </Link>

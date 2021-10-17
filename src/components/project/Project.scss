@@ -1,5 +1,5 @@
 @mixin mobile {
-  @media (max-width: 420px) {
+  @media (max-width: 460px) {
     @content;
   }
 }
@@ -23,6 +23,7 @@
   @include mobile {
     flex-direction: column;
     align-items: center;
+    margin: 10px;
   }
 
   .img-container {
@@ -45,7 +46,7 @@
         width: 100%;
         height: auto;
         @include mobile {
-          width: 80%;
+          width: 100%;
         }
       }
     }
@@ -98,6 +99,9 @@
           justify-content: flex-start;
           align-items: center;
           width: 100%;
+          @include mobile {
+            justify-content: center;
+          }
       }
       .project-describe {
         font-style: normal;
@@ -118,16 +122,22 @@
         transform: translateX(6.5vw);
 
         @include mobile {
-          margin-top: 2vw;
-          font-size: 7vw;
-          float: right;
+          margin: 3vw 0;
+          font-size: 3vw;
+          line-height: 3vw;
+          transform: translateX(0);
         }
 
-        span {
+        .link-icon {
           margin-left: 0.5vw;
           font-size: 1.5vw;
           transform: translateY(0.2vw);
           position: absolute;
+
+          @include mobile {
+            font-size: 3vw;
+           
+          }
         }
       }
     }

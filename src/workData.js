@@ -17,7 +17,7 @@ import { THSRC1,THSRC2,THSRC3 } from "./img/thsrc/thsrc";
 const workData = [
   {
     id: 1,
-    name: "COVID19_",
+    name: "COVID19",
     img: covidLogo,
     describe: "用於查看所在地以及全國新冠肺炎疫情",
     contents:"因新冠肺炎疫情嚴重，故希望做一個可以方便查找疫情相關資訊以及新聞的作品，減少觀看疫情相關資訊以及重點新聞的時間。",
@@ -32,7 +32,7 @@ const workData = [
 
   {
     id: 2,
-    name: "MOONCAKE_",
+    name: "MOONCAKE",
     img: mooncakeLogo,
     describe: "大聯大控股 企業中秋賀卡製作",
     contents:"隨著中秋時節的到來，企業發送數位中秋賀卡，結合互動小遊戲以及企業吉祥物，以更生動有趣的方式祝賀中秋節快樂。",
@@ -48,7 +48,7 @@ const workData = [
   },
   {
     id: 3,
-    name: "MOVIE_",
+    name: "MOVIE",
     img: movie,
     describe: "用於查詢電影以及戲劇資訊",
     contents:"透過OMDB API取得電影及戲劇相關資訊，使用者可以輸入關鍵字進行搜尋，並利用Redux-Toolkit 進行資料處理",
@@ -64,7 +64,7 @@ const workData = [
 
   {
     id: 4,
-    name: "MOTOR_",
+    name: "MOTOR",
     img: motorLogo,
     describe: "客製檔車工作室網站設計",
     contents:"在台灣受到法規的限制，導致手工檔車文化發展侷限，也較為不普及，由於本身為手工檔車愛好者，希望藉由網站及互動遊戲，讓更多人了解檔車文化。",
@@ -82,7 +82,7 @@ const workData = [
 
   {
     id: 5,
-    name: "MUSICPLAYER_",
+    name: "MUSICPLAYER",
     img: musicLogo,
     describe: "復古音樂播放APP",
     contents:"現代社會流行復古的元素，黑膠唱片更是經典的產品，將黑膠唱片視覺化，製成數位音樂播放器",
@@ -98,7 +98,7 @@ const workData = [
 
   {
     id: 6,
-    name: "WEATHER_",
+    name: "WEATHER",
     img: weatherLogo,
     describe: "查詢台灣各縣市一週天氣狀況",
     contents:"使用台灣中央氣象局的開源 API，將各縣市一週氣象狀況以圖像呈現，根據資訊有相對的動畫，讓使用者更輕易讀取天氣預報。",
@@ -113,7 +113,7 @@ const workData = [
 
   {
     id: 7,
-    name: "THSRC_",
+    name: "THSRC",
     img: hsrLogo,
     describe: "查詢台灣高鐵班次及票價",
     contents:"使用台灣高鐵 API ，依照台灣高鐵品牌形象開發出此高鐵時刻查詢 APP，輸入查詢資訊便可以得到班次、票價及時刻表。",
