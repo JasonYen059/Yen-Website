@@ -27,18 +27,18 @@ const Pad = ({ keyInfo }) => {
   useEffect(() => {
     const audioTag = document.getElementById(keyInfo.key);
     audioTag.loop = hold;
-  }, [hold,keyInfo.key]);
+  }, [hold, keyInfo.key]);
 
   const playsound = () => {
     const audioTag = document.getElementById(keyInfo.key);
-    if(audioTag.currentTime === 0){
+    if (audioTag.currentTime === 0) {
       audioTag.play();
       setTap(true);
-      audioTag.onended = ()=>{
+      audioTag.onended = () => {
         audioTag.currentTime = 0;
         setTap(false);
-      }
-    }else{
+      };
+    } else {
       audioTag.pause();
       audioTag.currentTime = 0;
       setTap(false);
@@ -70,8 +70,10 @@ const Pad = ({ keyInfo }) => {
         id={keyInfo.id}
         className={`loop-btn ${hold && "holdactive"}`}
       >
-          <span className="infokey-loop">{keyInfo.holdKey}</span>
-          <span className="loop-text"><ImLoop2/></span>
+        <span className="infokey-loop">{keyInfo.holdKey}</span>
+        <span className="loop-text">
+          <ImLoop2 />
+        </span>
       </div>
     </div>
   );
