@@ -30,6 +30,15 @@ const Exp = () => {
       </div>
       <div className="exp-content">
         <div className="content-container">
+          <div className="content-top">
+            2022 台北共居研究指南 - 雙北地區青年租屋生存攻略｜相信世代 x IVC
+          </div>
+          <div className="content-bottom">
+            <span>前端開發</span>
+            <span>動態圖表、RWD 、製作問卷網站</span>
+          </div>
+        </div>
+        <div className="content-container">
           <div className="content-top">2017 晉江海峽兩岸設計營</div>
           <div className="content-bottom">
             <span>企業實習 - 三斯達、信泰</span>
@@ -69,7 +78,14 @@ const Exp = () => {
         <span className="splitline"></span>
       </div>
       <div className="exp-content">
-      <div className="content-container">
+        <div className="content-container">
+          <div className="content-top">景承科技股份有限公司</div>
+          <div className="content-bottom">
+            <span>前端工程師</span>
+            <span>開發金融業行動帳單、後台管理系統</span>
+          </div>
+        </div>
+        <div className="content-container">
           <div className="content-top">REACT JS 專案</div>
           <div className="content-bottom">
             <span>wpg大聯大控股 中秋賀卡App</span>
